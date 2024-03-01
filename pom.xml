@@ -21,45 +21,54 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.8.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
       <version>RELEASE</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter</artifactId>
-      <version>5.8.1</version>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.10.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.13.2</version>
+      <version>4.13.1</version>
+      <scope>test</scope>
     </dependency>
+
+
   </dependencies>
 
   <build>
-  <FinalName>dockerdemo</FinalName>
+    <finalName>dockerdemo</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.1</version>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version> 3.3.0</version>
         <configuration>
           <archive>
             <manifest>
-              <mainClass>com.calculator.App</mainClass>
+              <mainClass>org.example.App</mainClass>
             </manifest>
-          <source>17</source>
-          <target>17</target>
+          </archive>
         </configuration>
       </plugin>
     </plugins>
+  </build>
 </project>
